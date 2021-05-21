@@ -1,0 +1,137 @@
+/* Dark mode */
+/* source: https://css-tricks.com/dark-modes-with-css/ */
+body {
+    color: #222;
+    background: #fff;
+    font: 100% system-ui;
+    text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background: #202020;
+    }
+
+    body a {
+        color: #809fff;
+    }
+}
+
+.text {
+    fill: #ffffff;
+}
+
+.text-legend {
+    fill: #ffffff;
+    opacity: 0.8;
+}
+
+/* Axis */
+.xAxis line {
+    stroke: #ffffff;
+    opacity: 0.8;
+}
+
+.xAxis path {
+    stroke: #ffffff;
+    opacity: 0.8;
+}
+
+.xAxis text {
+    fill: #ffffff;
+    font: 150% system-ui;
+    opacity: 0.8;
+}
+
+.yAxis line {
+    stroke: #ffffff;
+    opacity: 0.8;
+}
+
+.yAxis path {
+    stroke: #ffffff;
+    opacity: 0.8;
+}
+
+.yAxis text {
+    fill: #ffffff;
+    font: 150% system-ui;
+    opacity: 0.8;
+}
+
+/* Legends */
+.legend-dens text {
+    fill: #d3d3d3;
+    font: 16px sans-serif;
+    opacity: 0.8;
+    text-anchor: start;
+}
+
+.legend-dens line {
+    stroke: #d3d3d3;
+    opacity: 0.8;
+}
+
+.legend-pop circle {
+    fill: none;
+    stroke: #d3d3d3;
+}
+  
+.legend-pop text {
+    fill: #d3d3d3;
+    font: 10px sans-serif;
+    text-anchor: middle;
+}
+
+/* Bubbles */
+.bubble {
+    fill: #d3d3d3;
+    fill-opacity: .5;
+    stroke: #0000;
+    stroke-width: .5px;
+}
+
+/* Radio toolbar */
+.radio-toolbar input[type="radio"] {
+    display: none;
+}
+  
+.radio-toolbar label {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+    padding: 8px;
+    font-size: 16px;
+    font-family: Arial;
+    width: 200px;
+    cursor: pointer;
+}
+  
+.radio-toolbar input[type="radio"]:checked+label {
+    background-color: #555555;
+    color: white;
+}
+
+/* Statistics box */
+.box1 {
+    font-weight: 300;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 18px;
+    align-self: center;
+}
+  
+.box2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 300px;
+}

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello, France (D3)</title>
+        <script type="text/javascript" src="js/d3/d3.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="shortcut icon" href="#">
+    </head>
+    <body>
+        <h1> Hello France! </h1>
+        <h2> Population & Density Map of France </h2>
+        <br>
+        <div class="radio-toolbar">
+            <input type="radio" id="plotDefault" name="radios" onclick="redraw('default')" checked><!--
+            --><label for="plotDefault">Default</label><!--
+            --><input type="radio" id="plotDensity" name="radios" onclick="redraw('density')"><!--
+            --><label for="plotDensity">Density</label><!--
+            --><input type="radio" id="plotPop" name="radios" onclick="redraw('population')"><!--
+            --><label for="plotPop">Population</label>
+        </div>
+
+        <br>
+        
+        <div id="map">
+            <!-- Map container -->
+        </div>
+
+        <div class="wrapper">
+            <div class="box1">Place</div>
+            <div class="box1">Population</div>
+            <div class="box2"><span id="place">&nbsp;</span></div>
+            <div class="box2"><span id="population">&nbsp;</span></div>
+            <div class="box1">Postal code</div>
+            <div class="box1">Density <i>[ppl/km<sup>2</sup>]</i></div>
+            <div class="box2"><span id="postalCode">&nbsp;</span></div>
+            <div class="box2"><span id="density">&nbsp;</span></div>
+        </div>
+
+        <script type="text/javascript" src="js/hello-france.js"></script>
+    </body>
+</html>
