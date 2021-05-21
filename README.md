@@ -1,7 +1,5 @@
 # Hello France!
 
-___
-
 ## Data Visualization Project in D3.js
 
 ### Default View
