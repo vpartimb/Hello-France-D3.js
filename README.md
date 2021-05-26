@@ -4,8 +4,6 @@
 
 ### Default View
 
-
-
 ![alt text](img/d3_france_default.png "Default View")
 
 ### Density Dot Map
